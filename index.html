@@ -3,45 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi Video</title>
+  <title>Video</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      text-align: center;
-      padding: 50px;
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
-    .container {
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      max-width: 600px;
-      margin: auto;
-    }
-    h1 {
-      color: #333;
-    }
-    a.boton {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #007BFF;
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    a.boton:hover {
-      background-color: #0056b3;
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Haz clic para ver el video</h1>
-    <a class="boton" href="https://doply.net/d/jj66va1mtv2c" target="_blank">Ver video en Doply</a>
-  </div>
+  <iframe src="https://doply.net/d/jj66va1mtv2c" allowfullscreen></iframe>
 </body>
 </html>
