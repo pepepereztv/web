@@ -3,84 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página con Video de Uqload</title>
+    <title>Dos Videos de Uqload</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
+        .header {
+            background-color: #0d0d0d;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }
         h1 {
-            text-align: center;
-            color: #444;
+            margin: 0;
+            color: #ff6600;
         }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-            height: 0;
-            overflow: hidden;
-            margin: 20px 0;
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
         }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .video-wrapper {
+            background-color: #262626;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             width: 100%;
-            height: 100%;
-            border: none;
+            max-width: 640px;
+        }
+        .video-title {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #ff9933;
+            font-weight: bold;
         }
         .disclaimer {
-            font-size: 12px;
-            color: #777;
             text-align: center;
-            margin-top: 30px;
-            padding: 10px;
-            border-top: 1px solid #eee;
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #0d0d0d;
+            font-size: 12px;
+            color: #999;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Reproductor Doble de Videos</h1>
+    </div>
+
     <div class="container">
-        <h1>Mi Video Incrustado</h1>
-        
-        <!-- Contenedor del video de Uqload -->
-        <div class="video-container">
+        <!-- Primer Video -->
+        <div class="video-wrapper">
+            <div class="video-title">Reproductor 1</div>
             <iframe 
-                src="https://uqload.net/f0vdj6l8gj5h.html" 
+                src="https://uqload.net/embed-f0vdj6l8gj5h.html" 
                 frameborder="0" 
+                marginwidth="0" 
+                marginheight="0" 
+                scrolling="no" 
+                width="100%" 
+                height="360" 
                 allowfullscreen>
             </iframe>
         </div>
-       
-        <p>Este es un ejemplo de cómo incrustar un video de Uqload en tu página web.</p>
-        
-        <div class="disclaimer">
-            <p><strong>Nota:</strong> Este video se aloja en un servicio externo. Asegúrate de tener los derechos necesarios para compartir este contenido.</p>
+
+        <!-- Segundo Video (mismo contenido) -->
+        <div class="video-wrapper">
+            <div class="video-title">Reproductor 2</div>
+            <iframe 
+                src="https://uqload.net/embed-f0vdj6l8gj5h.html" 
+                frameborder="0" 
+                marginwidth="0" 
+                marginheight="0" 
+                scrolling="no" 
+                width="100%" 
+                height="360" 
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
-    <div class="container">
-        <h1>Mi Video Incrustado</h1>
-        
-        <!-- Contenedor del video de Uqload -->
-        <div class="video-container">
-            <IFRAME SRC="https://uqload.net/embed-f0vdj6l8gj5h.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
-        </div>
-       
-        <p>Este es un ejemplo de cómo incrustar un video de Uqload en tu página web.</p>
-        
-        <div class="disclaimer">
-            <p><strong>Nota:</strong> Este video se aloja en un servicio externo. Asegúrate de tener los derechos necesarios para compartir este contenido.</p>
-        </div>
+
+    <div class="disclaimer">
+        <p>Esta página muestra contenido incrustado desde servicios externos. Los videos no se alojan en GitHub.</p>
+        <p>© 2023 Tu Página Web - Todos los derechos reservados</p>
     </div>
 </body>
 </html>
