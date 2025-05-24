@@ -3,119 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dos Videos de Uqload</title>
+    <title>12 Videos - Dark Mode</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #1a1a1a;
-            color: #e0e0e0;
-        }
-        .header {
-            background-color: #0d0d0d;
             padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            background-color: #000000;
+            color: #ffffff;
         }
         h1 {
-            margin: 0;
-            color: #ff6600;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffffff;
         }
-        .container {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 20px;
+        .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 30px;
-            justify-items: center; 
-            max-width: 1400px; 
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
-        .video-wrapper {
-            background-color: #262626;
+        .video-container {
+            background: #111111;
             border-radius: 8px;
-            padding: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            width: 100%;
-            max-width: 640px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(255,255,255,0.1);
         }
         .video-title {
             text-align: center;
-            margin-bottom: 10px;
-            color: #ff9933;
-            font-weight: bold;
+            margin: 10px 0;
+            font-size: 14px;
+            color: #dddddd;
         }
-        .disclaimer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 15px;
-            background-color: #0d0d0d;
-            font-size: 12px;
-            color: #999;
+        iframe {
+            width: 100%;
+            height: 180px;
+            border: none;
+            border-radius: 4px;
         }
-       @media (max-width: 500px) {
-    .container {
-        grid-template-columns: 1fr; /* Un video por fila en móviles */
-    }
-}
+        @media (max-width: 600px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Reproductor Doble de Videos</h1>
-    </div>
-
-    <div class="container">
-        <!-- Primer Video -->
-        <div class="video-wrapper">
-            <div class="video-title">capitulo 1</div>
-            <iframe 
-                src="https://uqload.net/embed-f0vdj6l8gj5h.html" 
-                frameborder="0" 
-                marginwidth="0" 
-                marginheight="0" 
-                scrolling="no" 
-                width="100%" 
-                height="360" 
-                allowfullscreen>
-            </iframe>
+    <h1>Colección de 12 Videos</h1>
+    
+    <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-container">
+            <div class="video-title">Video 1</div>
+            <iframe src="https://uqload.net/embed-f0vdj6l8gj5h.html" allowfullscreen></iframe>
         </div>
-
-        <!-- Segundo Video (mismo contenido) -->
-        <div class="video-wrapper">
-            <div class="video-title">capitulo 2</div>
-            <iframe 
-                src="https://uqload.net/embed-sysk4xhkqbh4.html" 
-                frameborder="0" 
-                marginwidth="0" 
-                marginheight="0" 
-                scrolling="no" 
-                width="100%" 
-                height="360" 
-                allowfullscreen>
-            </iframe>
+        
+        <!-- Video 2 -->
+        <div class="video-container">
+            <div class="video-title">Video 2</div>
+            <iframe src="https://uqload.net/embed-sysk4xhkqbh4.html" allowfullscreen></iframe>
         </div>
-    </div>
-
-     <!-- Segundo Video (mismo contenido) -->
-        <div class="video-wrapper">
-            <div class="video-title">capitulo 3</div>
-            <iframe 
-                src="https://uqload.net/embed-xgmx1mwqx2us.html" 
-                frameborder="0" 
-                marginwidth="0" 
-                marginheight="0" 
-                scrolling="no" 
-                width="100%" 
-                height="360" 
-                allowfullscreen>
-            </iframe>
+        
+        <!-- Video 3 -->
+        <div class="video-container">
+            <div class="video-title">Video 3</div>
+            <iframe src="https://uqload.net/embed-xgmx1mwqx2us.html" allowfullscreen></iframe>
         </div>
-    </div>
-    <div class="disclaimer">
-        <p>Esta página muestra contenido incrustado desde servicios externos. Los videos no se alojan en GitHub.</p>
-        <p>© 2023 Tu Página Web - Todos los derechos reservados</p>
+        
+        <!-- Video 4 -->
+        <div class="video-container">
+            <div class="video-title">Video 4</div>
+            <iframe src="https://uqload.net/embed-f0vdj6l8gj5h.html" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Video 5 -->
+        <div class="video-container">
+            <div class="video-title">Video 5</div>
+            <iframe src="https://uqload.net/embed-f0vdj6l8gj5h.html" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Video 6 -->
+        <div class="video-container">
+            <div class="video-title">Video 6</div>
+            <iframe src="https://uqload.net/embed-f0vdj6l8gj5h.html" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Video 7 -->
+        <div class="video-container">
+            <div class="video-title">Video 7</div>
+            <iframe src="https://uqload.net/embed-f0vdj6l8gj5h.html" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Video 8 -->
+        <div class="video-container">
+            <div class="video-title">Video 8</div>
+            <iframe src="https://uqload.net/embed-f0vdj6l8gj5h.html" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Video 9 -->
+        <div class="video-container">
+            <div class="video-title">Video 9</div>
+            <iframe src="https://uqload.net/embed-f0vdj6l8gj5h.html" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Video 10 -->
+        <div class="video-container">
+            <div class="video-title">Video 10</div>
+            <iframe src="https://uqload.net/embed-f0vdj6l8gj5h.html" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Video 11 -->
+        <div class="video-container">
+            <div class="video-title">Video 11</div>
+            <iframe src="https://uqload.net/embed-f0vdj6l8gj5h.html" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Video 12 -->
+        <div class="video-container">
+            <div class="video-title">Video 12</div>
+            <iframe src="https://uqload.net/embed-f0vdj6l8gj5h.html" allowfullscreen></iframe>
+        </div>
     </div>
 </body>
 </html>
